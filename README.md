@@ -3,7 +3,7 @@
 ### Tema da Linguagem
 A linguagem será inspirada em **futebol**, permitindo escrever programas que simulam ações típicas de uma partida (passes, chutes, gols, etc.).
 
-### 📖 Gramática (versão inicial em EBNF)
+### Gramática (versão inicial em EBNF)
 
 ```ebnf
 program     = { statement } ;
