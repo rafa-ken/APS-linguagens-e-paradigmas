@@ -1,0 +1,6 @@
+jogador n;
+n passe 0;
+enquanto (n < 3) {
+  torcida(n);
+  n passe n + 1;
+}

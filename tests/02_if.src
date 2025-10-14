@@ -1,0 +1,3 @@
+jogador x;
+x passe 0;
+ataque (x == 0) { torcida(x); } defesa { torcida(1); }

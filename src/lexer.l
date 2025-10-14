@@ -28,9 +28,8 @@ extern int yylineno;
 
 int print_mode = 0;
 
-void yyerror(const char *s) {
-    fprintf(stderr, "Erro léxico (linha %d): %s\n", yylineno, s);
-}
+void yyerror(const char *s);
+
 void print_name_token(const char *kind, const char *text) {
     printf("%s(%s)\n", kind, text);
 }
