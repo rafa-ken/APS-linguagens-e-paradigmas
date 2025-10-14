@@ -10,3 +10,6 @@ exemplos/out.asm
 *.swp
 *~
 .DS_Store
+
+# Saídas de testes
+tests/out/
