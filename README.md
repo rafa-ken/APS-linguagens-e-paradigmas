@@ -3,6 +3,8 @@
 ### Tema da Linguagem
 A linguagem é inspirada em futebol, permitindo representar jogadores, passes, jogadas e ações típicas em um programa.
 
+VM escolhida: Stack-based VM (SimpleStackVM)
+
 ### Gramática em EBNF
 
 ```ebnf
