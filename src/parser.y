@@ -63,6 +63,7 @@ void emit(const char *fmt, ...) {
 %left '+' '-'
 %left '*' '/'
 %right UMINUS
+%nonassoc LOWER_THAN_DEFESA
 
 %%
 
@@ -108,7 +109,7 @@ print_stmt:
   ;
 
 if_stmt:
-    ATAQUE '(' expr ')' block {
+    ATAQUE '(' expr ')' block %prec LOWER_THAN_DEFESA {
       int Lend = new_label();
       emit("JZ L%d\n", Lend);
       /* block already emitted by recursive rules */
@@ -202,8 +203,6 @@ factor:
   ;
 
 %%
-
-#include <stdarg.h>
 
 void yyerror(const char *s) {
   fprintf(stderr, "Erro sintático (linha %d): %s\n", yylineno, s);

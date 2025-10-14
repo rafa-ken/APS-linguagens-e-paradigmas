@@ -1,11 +1,26 @@
-# APS - Linguagens & Paradigmas (2025/2)
+# ⚽ FutebolLang — APS Linguagens & Paradigmas (2025/2)
 
-### Tema da Linguagem
-A linguagem é inspirada em futebol, permitindo representar jogadores, passes, jogadas e ações típicas em um programa.
+**Rafael Ken Reis Miyamoto**  
+Turma: Linguagens e Paradigmas — 2025/2  
 
-VM escolhida: Stack-based VM (SimpleStackVM)
+---
 
-### Gramática em EBNF
+## Tema da Linguagem
+A **FutebolLang** é uma linguagem inspirada no universo do futebol.  
+Ela permite representar jogadores, passes, jogadas e ações típicas dentro de um programa.
+
+Os comandos da linguagem utilizam termos como:
+- `jogador` — declaração de variáveis
+- `passe` — atribuição
+- `torcida` — saída (impressão)
+- `ataque` e `defesa` — estrutura condicional (if / else)
+- `enquanto` — laço de repetição (while)
+
+A linguagem é compilada para uma **Stack-based VM (SimpleStackVM)**, uma máquina virtual baseada em pilha com instruções como `PUSH`, `LOAD`, `STORE`, `ADD`, `SUB`, `JZ`, `JMP`, etc.
+
+---
+
+## Estrutura Gramatical (EBNF)
 
 ```ebnf
 program     ::= { stmt } ;
@@ -37,4 +52,3 @@ factor      ::= "-" factor
               | NUMBER
               | NAME
               | "(" expr ")"
-              ;
