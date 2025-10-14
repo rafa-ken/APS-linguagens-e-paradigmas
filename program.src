@@ -1,0 +1,6 @@
+jogador bola;
+bola passe 0;
+enquanto (bola < 3) {
+  torcida(bola);
+  bola passe bola + 1;
+}
