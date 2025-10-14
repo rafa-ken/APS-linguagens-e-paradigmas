@@ -1,0 +1,12 @@
+# Arquivos gerados automaticamente
+src/lex.yy.c
+src/parser.tab.c
+src/parser.tab.h
+src/comp
+exemplos/out.asm
+
+# Editor / sistema
+.vscode/
+*.swp
+*~
+.DS_Store
